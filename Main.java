@@ -149,7 +149,6 @@ class Compute extends Methods{
         String mainMaterial = value2;
         String service = value3;
 
-        ///if else
         if (jewelryType==box1[0]){
             price1 = box1price[0];
         }
