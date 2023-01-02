@@ -22,7 +22,6 @@ abstract class Main extends Compute{
         JPanel panelThree = new JPanel(new FlowLayout());
         panelThree.setBackground(new Color(0,0,0,0));
         panelThree.setBounds(380, 300, 90, 50);
-        //Price Details
 
         panelLogo.setBounds(125, 20, 250, 50);
         panelTitle.setBounds(125, 70, 250, 50);
@@ -178,7 +177,7 @@ class Compute extends Methods{
         else{
             price3 = box3price[2];
         }
-        ///if else
+        
         int profit = (price1 * price2 * price3);
         int itemprice = (profit) + labor ;
         return itemprice;
