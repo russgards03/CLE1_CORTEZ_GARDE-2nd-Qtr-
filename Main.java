@@ -93,7 +93,7 @@ abstract class Main extends Compute{
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int result = computeItemPrice((String) box1.getSelectedItem(),(String) box2.getSelectedItem(),(String) box3.getSelectedItem());
+                int result = PriceComputation((String) box1.getSelectedItem(),(String) box2.getSelectedItem(),(String) box3.getSelectedItem());
                 displayResult(String.valueOf(result));
 
             }
@@ -132,7 +132,7 @@ abstract class Methods {
     }
 }
 class Compute extends Methods{
-    public static int computeItemPrice(String value1, String value2, String value3){
+    public static int PriceComputation(String value1, String value2, String value3){
 
         String[] box1 ={"Necklace", "Earrings", "Cuff links", "Bracelet", "Ring"};
         String[] box2 ={"Gold", "Silver"};
